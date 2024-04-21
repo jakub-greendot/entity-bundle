@@ -3,8 +3,6 @@
 namespace Greendot\EshopBundle;
 
 use Doctrine\Bundle\DoctrineBundle\DependencyInjection\Compiler\DoctrineOrmMappingsPass;
-use Greendot\EshopBundle\DependencyInjection\GreendotEshopExtension;
-use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
@@ -14,11 +12,6 @@ class GreendotEshopBundle extends AbstractBundle
     public function getPath(): string
     {
         return dirname(__DIR__);
-    }
-
-    public function getContainerExtension(): ?ExtensionInterface
-    {
-        return new GreendotEshopExtension();
     }
 
     public function build(ContainerBuilder $container): void
