@@ -50,6 +50,7 @@ class GreendotEshopBundle extends AbstractBundle
                     $managerParameters,
                     $enabledParameter,
                     $aliasMap,
+                    true
                 )
             );
         }
